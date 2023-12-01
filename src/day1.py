@@ -13,7 +13,7 @@ def getNumberPart1(text: str) -> int:
             last = int(s)
             if first < 0:
                 first = int(s)
-    return first*10 + last
+    return first * 10 + last
 
 
 def getNumberPart2(text: str) -> int:
@@ -43,7 +43,6 @@ def main():
     print("Part one: ")
     totalCalibration = sum(getNumberPart1(x) for x in data)
     print(f"The total calibration value is {totalCalibration}. \n")
-
 
     print("Part two: ")
     totalCalibrationPart2 = sum(getNumberPart2(x) for x in data)

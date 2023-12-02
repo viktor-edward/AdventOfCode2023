@@ -26,7 +26,7 @@ def main():
 
     print("\nPart two: ")
     sumOfPowerSets = 0
-    for gameId, game in enumerate(data):
+    for game in data:
         flattenGame = [item for sublist in game for item in sublist]
         sumOfPowerSets += (max(map(lambda x: containsColor(x, "red"), flattenGame)) *
                            max(map(lambda x: containsColor(x, "green"), flattenGame)) *

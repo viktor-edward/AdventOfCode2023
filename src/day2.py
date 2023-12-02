@@ -22,7 +22,7 @@ def main():
                 and max(map(lambda x: containsColor(x, "green"), flattenGame)) <= 13
                 and max(map(lambda x: containsColor(x, "blue"), flattenGame)) <= 14):
             sumOfAcceptedGames += gameId + 1
-    print(f"The sum of accepted game ids are {sumOfAcceptedGames}. \n")
+    print(f"The sum of accepted game ids is {sumOfAcceptedGames}. \n")
 
     print("\nPart two: ")
     sumOfPowerSets = 0
@@ -31,7 +31,7 @@ def main():
         sumOfPowerSets += (max(map(lambda x: containsColor(x, "red"), flattenGame)) *
                            max(map(lambda x: containsColor(x, "green"), flattenGame)) *
                            max(map(lambda x: containsColor(x, "blue"), flattenGame)))
-    print(f"The sum of accepted game ids are {sumOfPowerSets}. \n")
+    print(f"The power sum of the games is {sumOfPowerSets}. \n")
 
 
 if __name__ == '__main__':
